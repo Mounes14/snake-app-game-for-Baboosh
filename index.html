@@ -176,7 +176,7 @@
     document.querySelector('html').lang = lang;
     document.querySelector('html').dir = (lang==='ar')?'rtl':'ltr';
     i18nBtn.textContent = (lang==='ar')?'AR':'EN';
-    document.querySelector('#hud .row .pill').textContent = (lang==='ar')? 'اللاعب: مريم' : 'Player: Maryam';
+    document.querySelector('#hud .row .pill').textContent = (lang==='ar')?  'اللاعب: مريم الكشمش' : 'Player: Maryam';
     document.querySelector('#photoBtn').textContent = L[lang].photo;
     document.querySelector('#startBtn').textContent = L[lang].start;
     document.querySelector('#pauseBtn').textContent = L[lang].pause;
@@ -414,7 +414,7 @@
     sctx.fillStyle = getComputedStyle(document.body).getPropertyValue('--text'); sctx.font = 'bold 20px system-ui';
     sctx.fillText((lang==='ar')?'لعبة الثعبان لمريم':'Snake for Maryam', 16, 28);
     sctx.font = '14px system-ui';
-    const ded = (lang==='ar')?'“أتمنى أن تجدي دائمًا الكرز الحلو والطرق اللطيفة. مع الحب، بابا.”':'“May you always find sweet cherries and gentle turns. Love, Dad.”';
+    const ded = (lang==='ar')?'“اتمنى ان اراك انتي واختك افضل مني بكثير ، تعلموا جيدا وثابروا جيدا ياابطالي ، مع حبي ....بابا مؤنس”':'“May you always find sweet cherries and gentle turns. Love, Dad.”';
     sctx.fillText(ded, 16, 52); sctx.drawImage(cvs, 20, 80);
     const url = shot.toDataURL('image/png'); const a = document.createElement('a'); a.href = url; a.download = 'snake-for-maryam-snapshot.png'; a.click();
   });
